@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Софья Полякова](https://up.htmlacademy.ru/htmlcss/34/user/2044267).
-* Наставник: `Неизвестно`.
+- Студент: [Софья Полякова](https://up.htmlacademy.ru/htmlcss/34/user/2044267).
+- Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
