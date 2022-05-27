@@ -3,74 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <style type="text/css"></style>
   </head>
-  <style type="text/css"></style>
   <body>
     <header>
       <div class="header-logo">
-        <a href="#" class="header-logo"><img src="#" /></a>
+      <a href="#" class="header-logo"><img src="#" /></a>
       </div>
         <nav>
           <ul class="header-navigation-list">
-            <li class="header-navigation-item"><a href="#">Главная</a></li>
-            <li class="header-navigation-item"><a href="#">О Седоне</a></li>
-            <li class="header-navigation-item"><a href="#">Гостиницы</a></li>
+            <li class="header-navigation-item">
+              <a class="nav__link" href="main.html">Главная</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="nav__link" href="about.html">О Седоне</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="nav__link" href="catalog.html">Гостиницы</a>
+              </li>
           </ul>
         </nav>
       <div class="user-menu">
-        <form class="user-menu-form">
-          <button>
-            <img src="#"/> <!-- тут нужна картинка лупы -->
-          </button>
-        </form>
+        <a class="nav__link" href="#">
+          <img src="#"/> <!-- тут нужна картинка лупы -->
+        </a>
         <ul class="user-menu-list">
           <li>
-            <a href="#" data-likes="12"><img src="#"></a> <!-- тут нужна картинка сердечка -->
+            <a class="nav__link" href="#" data-likes="12">
+              <img src="#">
+            </a> <!-- тут нужна картинка сердечка -->
           </li>
         </ul>
-        </div>
-        <button class="user-menu" type="submit">Хочу сюда!</button>
+      </div>
+        <a class="nav__link" href="#">Хочу сюда!</a>
       </div>
     </header>
     <main>
-    <section class="welcome-section">
+    <section class="welcome-image">
       <img src="#" class="welcome">
     </section>
-    <section class="main-section">
+    <section class="main">
       <h1 class="main-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
     <section class="advantages">
       <ul class="advantages-list">
         <li class="advantages-item">
-      <h3 class="advantages-title">Настоящий городок</h3>
-      <p class="advantages-description-short">-№1-</p>
-      <p class="advantages-description">Cедона - не аттракцион для туристов, там течет своя жизнь</p>
-      <li>
-      <img src="#" alt="Седона" />
+          <h3 class="advantages-title">Настоящий городок</h3>
+          <p class="advantages-description-short">-№1-</p>
+          <p class="advantages-description">Cедона - не аттракцион для туристов, там течет своя жизнь</p>
+        </li>
+      <li> 
+        <h3 class="advantages-title">Жильё</h3>
+        <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </li>
       <li class="advantages-item">
-      <img src="#"> 
-      <h3 class="advantages-title">Жильё</h3>
-      <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <img src="#">
+        <h3 class="advantages-title">Еда</h3>
+        <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li class="advantages-item">
-      <img src="#">
-      <h3 class="advantages-title">Еда</h3>
-      <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        <img src="#">
+        <h3 class="advantages-title">Сувениры</h3>
+        <p class="advantages-description">Не только китайского, но и настоящего метсного производства!</p>
       </li>
       <li class="advantages-item">
-      <img src="#">
-      <h3 class="advantages-title">Сувениры</h3>
-      <p class="advantages-description">Не только китайского, но и настоящего метсного производства!</p>
-</li>
-    <li class="advantages-item">
-      <img src="#" alt="Мост" />
-      <h3 class="advantages-title">Там есть мост дьявола</h3>
-      <p class="advantages-description-short">-№2-</p>
-      <p>Да, по нему можно пройти!</p>
-      <p>Если вы осмелитесь, разумеется</p>
-    </li>
+        <h3 class="advantages-title">Там есть мост дьявола</h3>
+        <p class="advantages-description-short">-№2-</p>
+        <p class="advantages-description">Да, по нему можно пройти!</p>
+        <p class="advantages-description">Если вы осмелитесь, разумеется</p>
+      </li>
       <li class="advantages-item">
         <h3 class="advantages-title">Небольшая площадь</h3>
         <p class="advantages-description-short">-№3-</p>
@@ -87,26 +89,24 @@
         <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
     </ul>
-    </section>
-    <section class="interesting-section">
-      <h2 class="standard-section-title">Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,</p>
-      <p>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button-2">Поиск гостиницы в Седоне</button>
+  </section>
+    <section class="interesting">
+      <h2 class="interesting-title">Заинтересовались?</h2>
+      <p class="interesting-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="interesting-link" href="#">Поиск гостиницы в Седоне</a>
     </section>
     <section class="newsletter">
-      <h2 class="standard-section-title">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама,</p>
-      <p>честное бойскаутское!</p>
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="#" method="post">
-   <label for="newsletter-email">
-                    <input class="field" 
-                    type="email" 
-                    name="newsletter-email" 
-                    id="newsletter-email" 
-                    placeholder="Ваш e-mail"  
-                    required>     
-                </label>
+        <label for="newsletter-email">
+          <input class="field" 
+                 type="email" 
+                 name="newsletter-email" 
+                 id="newsletter-email" 
+                 placeholder="Ваш e-mail"  
+                 required>
+        </label>
         <button class="button newsletter-button" type="submit">
           Подписаться
         </button>
@@ -114,20 +114,20 @@
     </section>
     </main>
     <footer class="page-footer"> 
-        <ul class="footer-social-list">
+        <ul class="footer-social-link">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <img src="" alt="ВКонтакте">
+              <img src="#" alt="ВКонтакте">
               </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
-              <img src="" alt="Telegram">
+              <img src="#" alt="Telegram">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="" alt="Youtube">
+              <img src="#" alt="Youtube">
             </a>
           </li>
         </ul>
