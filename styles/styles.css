@@ -16,10 +16,12 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: px;
-  line-height: px;
+  font-size: 18px;
+  line-height: 21px;
   color: #242424;
-  background-color: #fbf7f4;
+  background-color: #f2f2f2;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 header {
@@ -52,7 +54,6 @@ header {
 }
 
 .welcome {
-  background-image: url("images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
