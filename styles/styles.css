@@ -19,71 +19,75 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #242424;
-  background-color: #f2f2f2;
-  padding-left: 40px;
-  padding-right: 40px;
+  background-color: #e5e5e5;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 header {
-  position: absolute;
-  height: 65px;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  color: #ffffff;
+  color: #000000;
   background-color: #ffffff;
-}
-
-.header-logo {
-  position: absolute;
-  left: 5.83%;
-  right: 82.58%;
-  top: 0%;
-  bottom: 0%;
 }
 
 .nav__link {
   font-family: "PT Sans Narrow", sans-serif;
-  font-size: 20px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
   color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.welcome {
+.header-logo {
+  position: absolute;
+  width: 139px;
+  height: 70px;
+  left: 70px;
+}
+
+.welcome-image {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #756157;
 }
 
 .welcome-logo {
   position: absolute;
-  left: 30.92%;
-  right: 30.92%;
-  top: 6.65%;
-  bottom: 47.46%;
+  width: 458px;
+  height: 352px;
+  top: 51px;
+  left: 371px;
 }
 
 .welcome-divider {
+  background-image: url("../images/divider.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 57px;
 }
 
 .main {
+  background-color: #ffffff;
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  background-image: url("../images/background-main.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.main-title {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-style: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
-
-  position: absolute, sans-serif;
-  left: 24.17%;
-  right: 24.17%;
-  top: 71.45%;
-  bottom: 19.17%;
 }
 
 .main-description {
@@ -94,4 +98,104 @@ header {
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.advantages-card-list {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.house-icon {
+  background: url("../images/house-icon.svg");
+}
+
+.interesting {
+  text-align: center;
+  background-image: url("../images/interesting.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.interesting-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.interesting-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.interesting-link {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 36px;
+  background-image: url(../images/button-interestin.png);
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.newsletter {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-image: url("../images/background2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.newsletter-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+footer {
+  background-image: url("../images/background-footer.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
+.footer-contacts {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.social-icon-vk {
+  background-image: url(../images/social-vk.svg);
+  background-color: #83b3d3;
+}
+
+.social-icon-tg {
+  background-image: url(../images/social-telegram.svg);
+  background-color: #83b3d3;
+}
+
+.social-icon-vk {
+  background-image: url(../images/social-youtube.svg);
+  background-color: #83b3d3;
 }
