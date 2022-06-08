@@ -49,6 +49,98 @@ header {
   left: 70px;
 }
 
+.main-inner {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/background-catalog.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.catalog-filter-item {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.catalog-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.visually-list {
+  list-style: none;
+}
+
+.catalog-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.catalog-card-place {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  width: 300px;
+  height: 28px;
+  left: 20px;
+  top: 247px;
+}
+
+.catalog-card-price {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-card-star {
+  background-image: url("../images/star.svg");
+}
+
+.catalog-card-rating {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  width: 95px;
+  height: 20px;
+  left: 183px;
+  top: 9px;
+}
+
 .newsletter {
   font-family: "PT Sans Narrow", sans-serif;
   background-color: #ffffff;
@@ -71,10 +163,6 @@ header {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-}
-
-.button .newsletter-button {
-  background-image: url("../images/button-subscribe.png");
 }
 
 footer {
