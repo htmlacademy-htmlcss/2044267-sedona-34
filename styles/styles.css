@@ -14,12 +14,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   color: #242424;
   background-color: #e5e5e5;
+}
+
+.page-header {
+  background-image: url(../images/background-header.png);
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .header-navigation-item {
@@ -28,7 +41,23 @@ body {
   background-color: #ffffff;
 }
 
-.header-logo {
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 390;
+}
+
+.user-menu {
+  width: 263.87px;
+  margin-left: auto;
+  list-style: none;
 }
 
 .nav__link {
@@ -36,20 +65,15 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
 }
 
-.user-menu {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .welcome-image {
@@ -63,10 +87,6 @@ body {
 .welcome-logo {
   /* position: absolute; */
   display: block;
-  width: 458px;
-  height: 352px;
-  top: 51px;
-  left: 371px;
   margin: 0 auto;
 }
 
@@ -111,25 +131,17 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   background-image: url(../images/bckgrnd-advantages.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.advantages-card-item-area {
-  background-color: aliceblue;
-}
-
-.advantages-card-item-road {
-  background-color: azure;
-}
-
-.advantages-card-item-tourist {
-  background-color: aliceblue;
-}
-
 .advantages-title {
+  display: flex;
+  justify-content: space-between;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -142,6 +154,8 @@ body {
 }
 
 .advantages-description-short {
+  display: flex;
+  justify-content: space-between;
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
@@ -152,6 +166,8 @@ body {
 }
 
 .advantages-description {
+  display: flex;
+  justify-content: space-between;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -163,7 +179,12 @@ body {
 }
 
 .advantages-card-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  text-align: center;
   color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -172,14 +193,26 @@ body {
 .advantages-card-item-house {
   list-style: none;
   background-color: aliceblue;
+  width: 400px;
+  height: 384px;
+  background-image: url(../images/house-icon.svg);
+  background-repeat: no-repeat;
 }
 
 .advantages-card-item-food {
   background-color: #ffffff;
+  width: 400px;
+  height: 384px;
+  background-image: url(../images/food-icon.svg);
+  background-repeat: no-repeat;
 }
 
 .advantages-card-item-presents {
   background-color: aliceblue;
+  width: 400px;
+  height: 384px;
+  background-image: url(../images/presents-icon.svg);
+  background-repeat: no-repeat;
 }
 
 .advantages-card-title {
@@ -213,16 +246,23 @@ body {
   color: #333333;
 }
 
-.house-icon {
-  background-image: url(../images/house-icon.svg);
+.advantages-card-item-area {
+  background-color: aliceblue;
+  width: 400px;
+  height: 384px;
 }
 
-.food-icon {
-  background-image: url(../images/food-icon.svg);
+.advantages-card-item-road {
+  background-color: #82b3d3 20%;
+  /* надо что-то с прозрачностью сделать */
+  width: 400px;
+  height: 384px;
 }
 
-.presents-icon {
-  background-image: url(../images/presents-icon.svg);
+.advantages-card-item-tourist {
+  background-color: aliceblue;
+  width: 400px;
+  height: 384px;
 }
 
 .interesting {
