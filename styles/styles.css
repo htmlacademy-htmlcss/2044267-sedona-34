@@ -35,6 +35,11 @@ body {
   background-color: #ffffff;
 }
 
+.header-logo {
+  width: 139px;
+  margin-right: auto;
+}
+
 .header-navigation-item {
   list-style: none;
   color: #000000;
@@ -71,8 +76,7 @@ body {
   text-transform: capitalize;
 }
 
-.page-container {
-  width: 1200px;
+.main-container {
   margin: 0 auto;
 }
 
@@ -253,7 +257,7 @@ body {
 }
 
 .advantages-card-item-road {
-  background-color: #82b3d3 20%;
+  background-color: rgba(158, 177, 190, 0.2);
   /* надо что-то с прозрачностью сделать */
   width: 400px;
   height: 384px;
@@ -371,6 +375,12 @@ body {
   background-color: #ffffff;
 }
 
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .footer-contacts {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 40px;
@@ -384,6 +394,9 @@ body {
 }
 
 .footer-social-item {
+  display: flex;
+  width: 142px;
+  height: 40px;
   list-style: none;
 }
 
@@ -403,7 +416,14 @@ body {
 }
 
 .main-inner {
-  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/background-catalog.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-container {
+  margin: 0 auto;
   background-color: #ffffff;
   background-image: url("../images/background-catalog.png");
   background-size: 100% auto;
@@ -417,6 +437,16 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+}
+
+.catalog-filter-group-infra {
+  display: flex;
+  width: 150.43px;
+}
+
+.catalog-filter-group-type {
+  display: flex;
+  width: 145.41px;
 }
 
 .catalog-filter-title {
