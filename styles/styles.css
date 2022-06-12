@@ -29,6 +29,17 @@ body {
   background-color: #e5e5e5;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   background-image: url(../images/background-header.png);
   color: #000000;
@@ -37,35 +48,30 @@ body {
 
 .header-logo {
   width: 139px;
-  margin-right: auto;
+  margin-right: 47px;
 }
 
 .header-navigation-item {
   list-style: none;
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .navigation {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 390;
-}
-
-.user-menu {
-  width: 263.87px;
-  margin-left: auto;
-  list-style: none;
+  width: 390 px;
 }
 
 .nav__link {
+  display: block;
+  padding: 20px 19px;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
@@ -76,8 +82,25 @@ body {
   text-transform: capitalize;
 }
 
+.navigation-list.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 263.87px;
+  margin-left: auto;
+  list-style: none;
+}
+
+.user-menu.nav__link {
+  min-width: 130px;
+  min-height: 20px;
+}
+
 .main-container {
-  margin: 0 auto;
+  flex-grow: 1;
+  padding-top: 51.4px;
+  padding-bottom: 83.03px;
 }
 
 .welcome-image {
@@ -89,7 +112,6 @@ body {
 }
 
 .welcome-logo {
-  /* position: absolute; */
   display: block;
   margin: 0 auto;
 }
@@ -134,6 +156,10 @@ body {
   color: #333333;
 }
 
+.advantages {
+  margin-bottom: 0 auto;
+}
+
 .advantages-list {
   display: flex;
   justify-content: space-between;
@@ -146,6 +172,8 @@ body {
 .advantages-title {
   display: flex;
   justify-content: space-between;
+  margin-top: 92px;
+  margin-bottom: 30px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -220,6 +248,8 @@ body {
 }
 
 .advantages-card-title {
+  margin-top: 182px;
+  margin-bottom: 30px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -231,6 +261,8 @@ body {
 }
 
 .advantages-card-description-short {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -241,6 +273,7 @@ body {
 }
 
 .advantages-card-description {
+  margin-top: 30px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -370,7 +403,7 @@ body {
 .footer {
   background-image: url("../images/background-footer.png");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: #000000;
   background-color: #ffffff;
 }
@@ -379,6 +412,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 45px 0;
 }
 
 .footer-contacts {
@@ -393,50 +427,77 @@ body {
   text-transform: uppercase;
 }
 
-.footer-social-item {
+.footer-social-list {
   display: flex;
-  width: 142px;
-  height: 40px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.footer-social-item {
+  width: 24px;
+  height: 17px;
+  margin-right: 28px;
+  margin-bottom: 48px;
+}
+
 .social-icon-vk {
-  background-image: url("../images/social-vk.svg");
-  background-repeat: no-repeat;
 }
 
 .social-icon-tg {
+  width: 18px;
+  height: 16px;
   background-image: url("../images/social-telegram.svg");
   background-repeat: no-repeat;
 }
 
 .social-icon-yt {
+  width: 22px;
+  height: 17px;
   background-image: url("../images/social-youtube.svg");
   background-repeat: no-repeat;
 }
 
 .main-inner {
+  padding-top: 40px;
+  color: #000000;
   background-color: #ffffff;
   background-image: url("../images/background-catalog.png");
-  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .inner-container {
   margin: 0 auto;
   background-color: #ffffff;
+  color: #000000;
   background-image: url("../images/background-catalog.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .inner-header-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+}
+
+span {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog-filter-group-infra {
@@ -449,6 +510,16 @@ body {
   width: 145.41px;
 }
 
+.catalog-list {
+  display: flex;
+  list-style: none;
+}
+
+.catalog-filter-item {
+  list-style: none;
+  color: #ffffff;
+}
+
 .catalog-filter-title {
   font-family: "PT Sans";
   font-style: normal;
@@ -458,11 +529,16 @@ body {
   color: #ffffff;
 }
 
-.catalog-filter-item {
-  list-style: none;
+.control {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
 }
 
-.control {
+.control-input {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -513,6 +589,12 @@ body {
   color: #333333;
 }
 
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-title {
   font-family: "PT Sans";
   font-style: normal;
@@ -529,6 +611,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  list-style: none;
 }
 
 .catalog-card-price {
@@ -566,6 +649,48 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.pagination-container {
+  display: flex;
+  padding: 30px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link.pagination-current {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 23.45px 24.55px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 23.45px 24.55px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
 }
 
 .newsletter-catalog {

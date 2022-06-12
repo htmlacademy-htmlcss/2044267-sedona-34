@@ -26,7 +26,7 @@
                 </li>
             </ul>
         </nav>
-        <ul class="user-menu">
+        <ul class="navigation-list user-menu">
             <li class="navigatiom-item">
                 <a class="nav__link" href="#"> </a>
             </li>
@@ -48,7 +48,7 @@
                     </li>
                     <li class="header-navigation-item">
                     <a class="nav__link">
-                        <img class="nav__link__icon" src="images/Union.svg" width="13" height="13">
+                        <!-- <img class="nav__link__icon" src="images/Union.svg" width="13" height="13"> -->
                         <span>Гостиницы</span>
                     </a>
                 </li>
@@ -61,8 +61,8 @@
             <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" 
-                               type="checkbox" 
+                        <input class="control-input"
+                               type="checkbox"
                                name="swimmingpool"
                                checked>
                         Бассейн
@@ -70,16 +70,16 @@
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" 
-                               type="checkbox" 
+                        <input class="control-input"
+                               type="checkbox"
                                name="parking"
                                checked>
                         Парковка
                     </label>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" 
-                               type="checkbox" 
+                        <input class="control-input"
+                               type="checkbox"
                                name="Wi-Fi">
                         Wi-Fi
                     </label>
@@ -91,8 +91,8 @@
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" 
-                                   type="radio" 
+                            <input class="control-input"
+                                   type="radio"
                                    name="hotels-group"
                                    value="hotel"
                                    checked>
@@ -101,8 +101,8 @@
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" 
-                                   type="radio" 
+                            <input class="control-input"
+                                   type="radio"
                                    name="hotels-group"
                                    value="motel">
                         Мотель
@@ -110,8 +110,8 @@
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" 
-                                   type="radio" 
+                            <input class="control-input"
+                                   type="radio"
                                    name="hotels-group"
                                    value="apartments">
                         Апартаменты
@@ -119,8 +119,8 @@
                     </li>
                 </ul>
             </fieldset>
-        <button class="button" type="button">Применить</button>
-        <button class="button" type="button">Сбросить</button>
+            <button class="button" type="button">Применить</button>
+            <button class="button" type="button">Сбросить</button>
             <section class="catalog">
                 <h2 class="catalog-search">Найдено гостиниц: 38</h2>
                 <select class="select-control" aria-label="Сортировка">
@@ -155,7 +155,7 @@
                         <b class="catalog-card-price">4000 ₽</b>
                         <a class="catalog-card-button-button" href="#">Подробнее</a>
                         <a class="catalog-card-button-button" href="#">В избранное</a>
-                        <img class="catalog-card-star" src="/images/star.svg"> 
+                        <img class="catalog-card-star" src="/images/star.svg">
                         <p class="catalog-card-rating">РЕЙТИНГ:8,5</p>
                     </li>
                     <li class="catalog-item">
@@ -201,8 +201,9 @@
                         <p class="catalog-card-rating">РЕЙТИНГ:5,0</p>
                     </li>
                 </ul>
-                <ul class="pagination">
-                    <li class="pagination-item">
+                <div class="pagination-container">
+                    <ul class="pagination">
+                        <li class="pagination-item">
                         <a class="pagination-link pagination-current">1</a>
                     </li>
                     <li class="pagination-item">
@@ -221,6 +222,7 @@
                         <a class="pagination-link" href="#">10</a>
                     </li>
                 </ul>
+                </div>
                 <p class="view">Гостиниц на странице:</p>
                 <select class="select-control" aria-label="Количество">
                     <option value="4"></option>
@@ -231,11 +233,11 @@
                     <p class="newsletter-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
                     <form class="newsletter-form" action="#" method="post">
                         <label for="newsletter-email">
-                            <input class="field" 
-                            type="email" 
-                            name="newsletter-email" 
-                            id="newsletter-email" 
-                            placeholder="Ваш e-mail"  
+                            <input class="field"
+                            type="email"
+                            name="newsletter-email"
+                            id="newsletter-email"
+                            placeholder="Ваш e-mail"
                             required>
                         </label>
                         <button class="button-newsletter-button" type="submit">
@@ -245,8 +247,8 @@
                 </section>
             </div>
             </main>
-            <footer class="footer"> 
-                <div class="footer-container"></div>
+            <footer class="footer">
+                <div class="footer-container">
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
                         <a class="footer-social-link" href="https://vk.com/htmlacademy">
