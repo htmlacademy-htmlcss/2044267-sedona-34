@@ -51,6 +51,7 @@ body {
   background-image: url(../images/background-header.png);
   color: #000000;
   background-color: #ffffff;
+  /* height: 65px; */
 }
 
 .header-logo {
@@ -70,10 +71,10 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  width: 390 px;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 390 px;
 }
 
 .nav__link {
@@ -99,6 +100,8 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
 }
 
 .navigation-list.user-menu {
@@ -365,6 +368,8 @@ body {
   background-image: url(../images/button-interestin.png);
   color: #ffffff;
   background-color: #756157;
+  padding: 12px 15px;
+  border-radius: 4px;
 }
 
 .newsletter {
@@ -383,6 +388,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -398,14 +404,13 @@ body {
 }
 
 .field {
-  width: 600px;
-  height: 60px;
   color: #000000;
   border-radius: 10px 0px 0px 10px;
   border: none;
 }
 
 .placeholder {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -430,6 +435,7 @@ body {
   border-radius: 0px 10px 10px 0px;
   width: 200px;
   height: 60px;
+  padding: 12px 15px;
 }
 
 .footer {
@@ -517,7 +523,7 @@ body {
   color: #ffffff;
 }
 
-span {
+.breadcrumbs {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -530,14 +536,21 @@ span {
   list-style-type: none;
 }
 
+.catalog-filter {
+  display: grid;
+  grid-template-columns: 150.43px 145.41px;
+}
+
 .catalog-filter-group-infra {
   display: flex;
-  width: 150.43px;
+  flex-direction: column;
+  border: none;
 }
 
 .catalog-filter-group-type {
   display: flex;
-  width: 145.41px;
+  flex-direction: column;
+  border: none;
 }
 
 .catalog-list {
@@ -559,7 +572,7 @@ span {
   color: #ffffff;
 }
 
-.control {
+.select.control {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -599,6 +612,7 @@ span {
   background: #82b3d3;
   border-radius: 4px;
   border: none;
+  padding: 14px 15px;
 }
 
 .button {
@@ -608,8 +622,13 @@ span {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  border: none;
-  background-color: #ffffff;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.right-column {
+  display: flex;
 }
 
 .select-control {
@@ -622,9 +641,31 @@ span {
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 18px;
+  margin-bottom: 66px;
+  padding: 20px;
+  gap: 16px;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.catalog-image {
+  padding: 20px;
 }
 
 .catalog-title-link {
@@ -635,6 +676,8 @@ span {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card-place {
@@ -645,6 +688,8 @@ span {
   line-height: 21px;
   color: #333333;
   list-style: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card-price {
@@ -654,6 +699,8 @@ span {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card-button-button {
@@ -666,6 +713,10 @@ span {
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card-button-button-favourite {
@@ -678,6 +729,10 @@ span {
   text-decoration: none;
   color: #ffffff;
   background-color: #7db54f;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card-button-button-more {
@@ -690,6 +745,10 @@ span {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card-rating {
@@ -700,6 +759,10 @@ span {
   line-height: 20px;
   color: #333333;
   background-color: #f2f2f2;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 28px;
 }
 
 .view {

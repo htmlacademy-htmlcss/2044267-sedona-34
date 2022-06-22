@@ -50,14 +50,14 @@
                             <li class="header-navigation-item">
                                 <a class="nav__link">
                                     <!-- <img class="nav__link__icon" src="images/Union.svg" width="13" height="13"> -->
-                                    <span>Гостиницы</span>
+                                    <span class="breadcrumbs">Гостиницы</span>
                                 </a>
                             </li>
                         </ul>
                     </header>
+                    <div class="catalog-filter">
                     <form>
-                        <fieldset class="catalog-filter-group-infra"></fieldset>
-                    </form>
+                        <fieldset class="catalog-filter-group-infra">
                     <legend class="catalog-filter-title">Инфраструктура</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -87,6 +87,8 @@
                             </li>
                         </ul>
                     </fieldset>
+                    </form>
+                    <form>
                     <fieldset class="catalog-filter-group-type">
                         <legend class="catalog-filter-title">Тип Жилья</legend>
                         <ul class="catalog-filter-list">
@@ -118,18 +120,24 @@
                                      Апартаменты
                                 </label>
                             </li>
+                            </div>
                         </ul>
                     </fieldset>
+                    </form>
                     <button class="button-apply" type="button">Применить</button>
                     <button class="button" type="button">Сбросить</button>
                     <section class="catalog">
                         <h2 class="catalog-search">Найдено гостиниц: 38</h2>
-                        <select class="select-control" aria-label="Сортировка">
-                            <option value="cheap">Сначала дешёвые</option>
-                        </select>
-                        <ul class="visually-list">
-                            <li class="visually-item">
-                                <a href="#" class="button button-light">
+                        <div class="right-column">
+                            <div class="sorting-container">
+                                <div class="select">
+                                    <select class="select-control" aria-label="Сортировка">
+                                        <option value="cheap">Сначала дешёвые</option>
+                                    </select>
+                                </div>
+                                <ul class="visually-list">
+                                   <li class="visually-item">
+                                       <a href="#" class="button button-light">
                                     <span class="visually-hidden">Показать карточки</span>
                                 </a>
                             </li>
@@ -149,6 +157,7 @@
                                 <a class="catalog-image-link" href="hotels.html">
                                     <img class="catalog-image" src="images/hotel-1.jpg" width="300" height="211" alt="Amara Resort & Spa">
                                 </a>
+                                <div class="catalog-card-content">
                                 <a class="catalog-title-link" href="#">
                                     <h3 class="catalog-title">Amara Resort & Spa</h3>
                                 </a>
@@ -156,13 +165,15 @@
                                 <b class="catalog-card-price">4000 ₽</b>
                                 <a class="catalog-card-button-button-more" href="#">Подробнее</a>
                                 <a class="catalog-card-button-button" href="#">В избранное</a>
-                                <img class="catalog-card-star" src="/images/star.svg">
+                                <img class="catalog-card-star">
                                 <p class="catalog-card-rating">РЕЙТИНГ:8,5</p>
+                                </div>
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-image-link" href="hotels.html">
                                     <img class="catalog-image" src="images/hotel-2.jpg" width="300" height="211" alt="Villas at Poco Diablo">
                                 </a>
+                                <div class="catalog-card-content">
                                 <a class="catalog-title-link" href="#">
                                     <h3 class="catalog-title">Villas at Poco Diablo</h3>
                                 </a>
@@ -172,11 +183,13 @@
                                 <a class="catalog-card-button-button-favourite" href="#">В избранном</a>
                                 <img class="catalog-card-star">
                                 <p class="catalog-card-rating">РЕЙТИНГ:9,2</p>
+                            </div>
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-image-link" href="hotels.html">
                                     <img class="catalog-image" src="images/hotel-3.jpg" width="300" height="211" alt="Desert Quail Inn">
                                 </a>
+                                <div class="catalog-card-content">
                                 <a class="catalog-title-link" href="#">
                                     <h3 class="catalog-title">Desert Quail Inn</h3>
                                 </a>
@@ -186,11 +199,13 @@
                                 <a class="catalog-card-button-button" href="#">В избранное</a>
                                 <img class="catalog-card-star">
                                 <p class="catalog-card-rating">РЕЙТИНГ:6,9</p>
+                                </div>
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-image-link" href="hotels.html">
                                     <img class="catalog-image" src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree Inn">
                                 </a>
+                                <div class="catalog-card-content">
                                 <a class="catalog-title-link" href="#">
                                     <h3 class="catalog-title">GreenTree Inn</h3>
                                 </a>
@@ -200,6 +215,7 @@
                                 <a class="catalog-card-button-button" href="#">В избранное</a>
                                 <img class="catalog-card-star">
                                 <p class="catalog-card-rating">РЕЙТИНГ:5,0</p>
+                                </div>
                            </li>
                         </ul>
                         <div class="pagination-container">
