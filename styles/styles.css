@@ -23,6 +23,7 @@ html {
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -55,6 +56,8 @@ body {
 }
 
 .header-logo {
+  display: block;
+  /* margin-bottom: -5px; */
   width: 139px;
   margin-right: 47px;
 }
@@ -102,9 +105,10 @@ body {
   background-color: #756157;
   padding: 9px 15px 8px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.navigation-list.user-menu {
+.navigation-user-menu {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -114,7 +118,7 @@ body {
   list-style: none;
 }
 
-.user-menu.nav__link {
+.navigation-user-menu.nav__link {
   min-width: 130px;
   min-height: 20px;
 }
@@ -123,6 +127,11 @@ body {
   flex-grow: 1;
   padding-top: 51.4px;
   padding-bottom: 83.03px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 auto;
 }
 
 .welcome-image {
@@ -183,9 +192,10 @@ body {
 }
 
 .advantages-list {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   list-style: none;
+  padding: 0;
   background-image: url(../images/bckgrnd-advantages.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -196,7 +206,7 @@ body {
   justify-content: space-between;
   margin-top: 92px;
   margin-bottom: 30px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -234,7 +244,7 @@ body {
 
 .advantages-card-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -249,24 +259,18 @@ body {
   background-color: aliceblue;
   width: 400px;
   height: 384px;
-  background-image: url(../images/house-icon.svg);
-  background-repeat: no-repeat;
 }
 
 .advantages-card-item-food {
   background-color: #ffffff;
   width: 400px;
   height: 384px;
-  background-image: url(../images/food-icon.svg);
-  background-repeat: no-repeat;
 }
 
 .advantages-card-item-presents {
   background-color: aliceblue;
   width: 400px;
   height: 384px;
-  background-image: url(../images/presents-icon.svg);
-  background-repeat: no-repeat;
 }
 
 .advantages-card-title {
@@ -370,6 +374,7 @@ body {
   background-color: #756157;
   padding: 12px 15px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .newsletter {
@@ -436,6 +441,7 @@ body {
   width: 200px;
   height: 60px;
   padding: 12px 15px;
+  cursor: pointer;
 }
 
 .footer {
@@ -461,12 +467,14 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  /* padding: 45px 420.5px 35px 448.5px; */
 }
 
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
@@ -493,6 +501,10 @@ body {
   height: 17px;
   background-image: url("../images/social-youtube.svg");
   background-repeat: no-repeat;
+}
+
+.footer-logo {
+  display: block;
 }
 
 .main-inner {
@@ -538,7 +550,7 @@ body {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: 150.43px 145.41px;
+  grid-template-columns: 150.43px 145.41px 287.81px 160.45px;
 }
 
 .catalog-filter-group-infra {
@@ -590,19 +602,13 @@ body {
   color: #ffffff;
 }
 
-.catalog-search {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
-}
+/* .buttons {
+  margin-bottom: 20px;
+} */
 
 .button-apply {
+  display: inline-block;
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -613,6 +619,9 @@ body {
   border-radius: 4px;
   border: none;
   padding: 14px 15px;
+  cursor: pointer;
+  width: 160px;
+  height: 48px;
 }
 
 .button {
@@ -625,6 +634,18 @@ body {
   outline: none;
   border: 0;
   background: transparent;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.catalog-search {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .right-column {
@@ -638,6 +659,11 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+/* вид */
+.visually-list {
+  list-style-type: none;
 }
 
 .catalog-list {
@@ -703,13 +729,13 @@ body {
   margin-bottom: 16px;
 }
 
-.catalog-card-button-button {
+.catalog-card-button {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
@@ -717,9 +743,10 @@ body {
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
-.catalog-card-button-button-favourite {
+.catalog-card-button-favourite {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -733,9 +760,10 @@ body {
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
-.catalog-card-button-button-more {
+.catalog-card-button-more {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -749,17 +777,19 @@ body {
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .catalog-card-rating {
+  padding: 9px 22px 8px 23px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #333333;
   background-color: #f2f2f2;
-  padding: 9px 22px 8px 23px;
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 28px;
@@ -863,6 +893,7 @@ body {
 }
 
 .button-newsletter-button {
+  padding: 12px 15px;
   font-family: "PT Sans", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -870,11 +901,12 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #ffffff;
   border: none;
   border-color: #82b3d3;
-  color: #ffffff;
   background-color: #82b3d3;
   border-radius: 0px 10px 10px 0px;
   width: 200px;
   height: 60px;
+  cursor: pointer;
 }
