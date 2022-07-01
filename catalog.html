@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <style type="text/css"></style>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
   </head>
   <body>
       <div class="content">
@@ -27,9 +28,9 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="navigation-user-menu">
-                    <li class="navigation-item">
-                        <a class="nav__link" href="#"> </a>
+                    <ul class="user-menu-list">
+                        <li class="user-menu-item">
+                        <a class="user-menu-link" href="#">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -45,10 +46,12 @@
                   fill="#000"
                 />
               </svg>
-            </a>
+              </a>
           </li>
-          <li class="navigation-item">
-            <a class="nav__link" href="#">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
+                <span class="likes">12</span>
+                <span class="visually-hidden">Нравится</span>
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -64,29 +67,13 @@
                   fill="#000"
                 />
               </svg>
-              <svg
-                width="21"
-                height="20"
-                viewBox="0 0 21 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x=".133" width="20" height="20" rx="10" fill="#7DB54F" />
-                <path
-                  d="M6.264 11.76h1.4V6.92l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37v.74h-3.55v-.74Zm7.829-4.67c0
-.353-.067.717-.2 1.09a6.547 6.547 0 0 1-.51 1.11c-.207.373-.44.74-.7 1.1-.26.353-.52.69-.78
-1.01l-.49.43v.04l.64-.11h2.18v.74h-3.98v-.29c.147-.153.323-.343.53-.57a16.081 16.081 0 0 0
-1.3-1.63c.22-.313.417-.63.59-.95.18-.32.323-.637.43-.95.107-.313.16-.61.16-.89
-0-.327-.093-.597-.28-.81-.187-.22-.47-.33-.85-.33-.253 0-.5.053-.74.16-.24.1-.447.217-.62.35l-.33-.57c.233-.2.51-.357.83-.47.32-.113.663-.17
-1.03-.17.287 0 .54.043.76.13.22.08.407.197.56.35.153.153.27.337.35.55.08.207.12.433.12.68Z"
-                  fill="#fff"
-                />
-              </svg>
             </a>
+          </li>
+          <li>
             <a class="nav__link__want" href="#">Хочу сюда!</a>
-                    </li>
-                </ul>
-            </header>
+          </li>
+        </ul>
+        </header>
             <main class="main-inner-container">
                 <div class="inner-container">
                     <header class="inner-header">
@@ -97,9 +84,6 @@
                             </li>
                             <li class="header-navigation-item">
                                 <a class="nav__link">
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" fill="white"/>
-                                    </svg>
                                     <span class="breadcrumbs">Гостиницы</span>
                                 </a>
                             </li>
@@ -180,45 +164,30 @@
                     </div>
                     <section class="catalog">
                         <h2 class="catalog-search">Найдено гостиниц: 38</h2>
-                        <div class="right-column">
+                         <div class="catalog-right-column">
                             <div class="sorting-container">
                                 <div class="select">
+                                    <div class="select sorting-type">
                                     <select class="select-control" aria-label="Сортировка">
                                         <option value="cheap">Сначала дешёвые</option>
                                     </select>
                                 </div>
-                                <ul class="visually-list">
-                                   <li class="visually-item">
-                                       <a href="#" class="button button-light">
+                                       <a href="#" class="card-grid-toggle card-grid-toggle-current" type="button">
+                                           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
                                     <span class="visually-hidden">Показать карточки</span>
-                                                               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26
-25h-4v6h4v-6ZM4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0
-6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0
-0 1 2-2v-4Z" fill="#000"/></svg>
                                 </a>
-                            </li>
-                            <li class="visually-item">
-                                <a href="#" class="button button-light">
+                                <a href="#" class="card-grid-toggle card-grid-toggle-nocurrent" type="button">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
                                     <span class="visually-hidden">Показать слайдшоу</span>
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z" fill="#000"/>
-<path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6
-6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1
-2-2v-4Z" fill="#E5E5E5"/></svg>
                                 </a>
-                            </li>
-                            <li class="visually-item">
-                                <a href="#" class="button button-light">
+                                <a href="#" class="card-grid-toggle card-grid-toggle-nocurrent" type="button">
+<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16
+12H4v2h12v-2Z" fill="#000"/></svg>
                                     <span class="visually-hidden">Показать список</span>
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32
-25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2
-42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44
-2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
                                 </a>
-                            </li>
-                        </ul>
                         <ul class="catalog-list">
                             <li class="catalog-item">
                                 <a class="catalog-image-link" href="hotels.html">
@@ -285,6 +254,7 @@
                                 <a class="catalog-card-button" href="#">В избранное</a>
                                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                                      <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
                                     <p class="catalog-card-rating">РЕЙТИНГ:5,0</p>
                                 </div>
                            </li>
@@ -320,7 +290,7 @@
                         <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
                         <p class="newsletter-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
                         <form class="newsletter-form" action="#" method="post">
-                            <label for="newsletter-email">
+                            <label for="newsletter-catalog-email">
                                 <input class="field"
                                        type="email"
                                        name="newsletter-email"
@@ -340,7 +310,7 @@
                             <ul class="footer-social-list">
                                 <li class="footer-social-item">
                                     <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="social-icon" width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M35.116 13.948c.166-.546 0-.948-.795-.948h-2.625c-.668
 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167
 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043
@@ -352,14 +322,14 @@
                                 </li>
                                 <li class="footer-social-item">
                                     <a class="footer-social-link" href="https://t.me/htmlacademy">
-                                    <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="social-icon" width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="m31.785 12.1-15.944 6.148c-1.089.437-1.082 1.044-.2 1.314l4.093 1.277 9.472-5.975c.448-.273.857-.126.52.172l-7.673 6.926h-.002.002l-.283 4.22c.414 0 .597-.19.829-.413l1.988-1.934 4.136 3.055c.762.42 1.31.204 1.5-.706l2.715-12.795c.278-1.114-.425-1.619-1.153-1.29Z"
 fill="#83B3D3"/></svg>
                                     </a>
                                 </li>
                                 <li class="footer-social-item">
                                     <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="social-icon" width="48" height="40" viewBox="0 0 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.94 11.5H16.507c-1.86 0-3.174 1.594-3.174 3.4v10.094c0 1.912 1.314 3.506 3.174 3.506H32.16c1.642 0
 3.174-1.594 3.174-3.4V14.9c-.219-1.806-1.532-3.4-3.393-3.4ZM20.995 24.038v-8.075L28.328 20l-7.333 4.038Z"
 fill="#83B3D3"/></svg>
