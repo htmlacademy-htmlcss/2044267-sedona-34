@@ -91,9 +91,9 @@ body {
   text-transform: capitalize;
 }
 
-.nav__link:hover {
+/* .nav__link:hover {
   border-bottom: 2px solid #756257;
-}
+} */
 
 .user-menu-list {
   display: flex;
@@ -583,6 +583,8 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-image: url(../images/breadcrumbs.svg);
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs:hover {
@@ -931,6 +933,27 @@ body {
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 28px;
+}
+
+.four-star {
+  background-image: url(../images/starfour.svg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 37px;
+}
+
+.three-star {
+  background-image: url(../images/starthree.svg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 37px;
+}
+
+.two-star {
+  background-image: url(../images/startwo.svg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 37px;
 }
 
 .view {
